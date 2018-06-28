@@ -1,0 +1,18 @@
+.Calendar__week-day-name {
+  display: flex;
+  width: 1022px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+.Calendar__day-name {
+  display: flex;
+  flex-basis: 16%;
+  flex-shrink: 1;
+  padding: 8px 40px;
+}
+
+.Calendar__day-name:last-child {
+  margin-right: 0;
+}

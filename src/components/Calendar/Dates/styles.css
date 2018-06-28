@@ -1,0 +1,18 @@
+.Calendar__dates {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.Calendar__date {
+  display: flex;
+  width: 146px;
+  height: 146px;
+  padding: 4px 8px;
+  border: 1px solid black;
+}
+
+.Calendar__date_today {
+  background: orange;
+}

@@ -1,0 +1,11 @@
+.Calendar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 96px;
+}
+
+.Calendar__transparent {
+  display: flex;
+  width: 168px;
+}
