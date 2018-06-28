@@ -29,7 +29,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/home" component={Home} />
-            <Route path="/login" render={() =>  <LoginForm onFormSubmit={this.updateInputValue} />} />
+            <Route path="/login" render={props =>  <LoginForm {...props} />} />
             <Route path="/calendar" component={Calendar} />
             <Route component={NotFound} />
           </Switch>
