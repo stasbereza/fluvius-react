@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Header from 'components/Header';
-import LoginForm from 'components/LoginForm';
-// import Calendar from 'components/Calendar';
+import Home from 'components/pages/Home';
+import LoginForm from 'components/pages/LoginForm';
+import Calendar from 'components/pages/Calendar';
+import NotFound from 'components/pages/NotFound';
 import './App.css';
 
 export default class App extends Component {
@@ -23,10 +26,15 @@ export default class App extends Component {
       <div className="App">
         <div className="container">
           <Header />
-          <LoginForm onFormSubmit={this.updateInputValue} />
+                    {/* <LoginForm onFormSubmit={this.updateInputValue} /> */}
           {/* <Calendar /> */}
-          <p>
-          </p>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/home" component={Home} />
+            <Route path="/login" component={LoginForm} />
+            <Route path="/calendar" component={Calendar} />
+            <Route component={NotFound} />
+          </Switch>
         </div>
       </div>
     );

@@ -1,0 +1,13 @@
+.Home {
+  margin: 200px auto;
+  color: #424242;
+  text-align: center;
+}
+
+.Home p {
+  padding: 16px;
+  font-size: 24px;
+  color: #ff5722;;
+  text-align: center;
+  text-transform: capitalize;
+}

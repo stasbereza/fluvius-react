@@ -75,7 +75,6 @@ export default class LoginForm extends Component {
 
   render() {
     const { email, password } = this.state;
-    console.log(this.state);
 
     return (
       <form className="LoginForm" onSubmit={this.handleFormSubmit}>
