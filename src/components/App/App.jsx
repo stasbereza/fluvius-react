@@ -26,12 +26,10 @@ export default class App extends Component {
       <div className="App">
         <div className="container">
           <Header />
-                    {/* <LoginForm onFormSubmit={this.updateInputValue} /> */}
-          {/* <Calendar /> */}
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/home" component={Home} />
-            <Route path="/login" component={LoginForm} />
+            <Route path="/login" render={() =>  <LoginForm onFormSubmit={this.updateInputValue} />} />
             <Route path="/calendar" component={Calendar} />
             <Route component={NotFound} />
           </Switch>
