@@ -35,5 +35,6 @@
     "eslint-plugin-prettier": "^2.6.1",
     "eslint-plugin-react": "^7.10.0",
     "prettier": "^1.13.6"
-  }
+  },
+  "homepage": "https://stasbereza.github.io/fluvius-react/build/"
 }
